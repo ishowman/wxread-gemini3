@@ -1,0 +1,5 @@
+{
+  "name": "BookMarked",
+  "description": "A modern, responsive book list management system supporting PWAs and cloud sharing.",
+  "requestFramePermissions": []
+}

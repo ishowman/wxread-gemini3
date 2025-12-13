@@ -1,0 +1,20 @@
+{
+  "name": "bookmarked-backend",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "wrangler dev index.ts",
+    "deploy": "wrangler deploy --minify index.ts",
+    "db:generate": "drizzle-kit generate",
+    "db:push": "drizzle-kit push"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^0.9.0",
+    "drizzle-orm": "^0.30.4",
+    "hono": "^4.1.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240314.0",
+    "drizzle-kit": "^0.20.14",
+    "wrangler": "^3.34.2"
+  }
+}
