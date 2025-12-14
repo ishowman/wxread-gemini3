@@ -23,8 +23,7 @@ export const ListDetail: React.FC = () => {
 
   // 处理未找到的情况
   if (!isLoading && !currentList && id) {
-    // 可以在这里显示 loading 或者 not found
-    // 刚进入页面时 currentList 可能是 null，但 isLoading 是 true
+     // 数据加载中的状态在 AppContext 已经处理，或者显示为空
   }
 
   const handleAddBook = async (e: React.FormEvent) => {

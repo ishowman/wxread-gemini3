@@ -32,7 +32,7 @@ export const Dashboard: React.FC = () => {
   const copyShareLink = async (e: React.MouseEvent, id: string) => {
     e.preventDefault();
     e.stopPropagation(); 
-    // Use window.location in client component is fine
+    // Next.js 不使用 Hash 路由，所以直接使用 /shared/id
     const url = `${window.location.origin}/shared/${id}`;
     
     try {
